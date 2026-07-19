@@ -1,0 +1,119 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family: "Lucida Handwriting", cursive;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242132;
+}
+
+.header{
+    background-color: #2E2944;
+    margin-top: 1%;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-style: double;
+    border-color: #6B5A99;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top:0px;
+    z-index: 10;
+}
+
+.nb{
+    display: flex;
+    padding: 10px;
+    list-style: none;
+    padding-bottom: 15px;
+    padding-top:15px;
+}
+
+.bt{
+    display: block;
+    border-color: #6B5A99;
+    text-decoration: none;
+    border-radius: 90px;
+    border-style: groove;
+    background-color:#372e50 ;
+    color: #D7D2E8;
+    border-width: 2px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition:0.3s;
+    padding: 15px;
+}
+
+.bt:hover{
+    color:#C084FC;
+    background-color: #463864;
+    box-shadow: 3px 3px 5px #0b0a10;
+}
+
+.artists{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+    grid-template-rows:1fr;
+    margin: 10px;
+    justify-items: center;
+}
+
+.ar{
+    position: relative;
+    display: flex;
+    background-color: #4a4266;
+    padding: 20px;
+    border-radius: 50px;
+    width:300px;
+    height: 380px;
+    flex-direction: column;
+    justify-content:flex-start;
+    margin-bottom: 40px;
+    border: #6a608b solid 2px;
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+
+.a1{
+    align-self: center;
+    border-radius: 999px;
+    border: #6a608b solid 2px;
+}
+
+.b{
+    position: absolute;
+    right:15px;
+    bottom:15px;
+    opacity: 0;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.ar h2{
+    margin-top: 15px;
+    text-align: center;
+    color: #f8f6ff;
+}
+
+.ar:hover{
+    background: linear-gradient(to bottom right, #4A4266 0%, #615787 25%, #6a5e99 50%, #615787 75%, #4A4266 100%);
+    box-shadow: 2px 2px 6px #0b0a10;
+    transform: scale(1.05);
+}
+
+.ar:hover .b{
+    opacity: 1;
+}
+
+footer{
+    color:#8275b8;
+    background-color: #181620;
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
